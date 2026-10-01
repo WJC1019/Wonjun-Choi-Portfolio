@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonjun Choi | Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #f8f9fa;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e5e5e5;
+      position: sticky;
+      top: 0;
+    }
+
+    nav h2 {
+      font-size: 22px;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #cc0033;
+    }
+
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 10%;
+      background-color: white;
+    }
+
+    .hero p:first-child {
+      color: #cc0033;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      margin-bottom: 15px;
+    }
+
+    .hero .statement {
+      max-width: 750px;
+      font-size: 22px;
+      color: #555;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .about {
+      background-color: #f8f9fa;
+    }
+
+    .about p {
+      max-width: 800px;
+      font-size: 17px;
+      color: #555;
+    }
+
+    .skills {
+      background-color: white;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background-color: #f1f1f1;
+      padding: 10px 18px;
+      border-radius: 20px;
+      font-size: 15px;
+    }
+
+    .projects {
+      background-color: #f8f9fa;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid #e5e5e5;
+      transition: 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin-bottom: 15px;
+      font-size: 21px;
+    }
+
+    .project-card p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    .project-type {
+      color: #cc0033;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      background-color: #222;
+      color: white;
+      text-align: center;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+      color: #ddd;
+    }
+
+    .contact a {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .contact a:hover {
+      background-color: white;
+      color: #222;
+    }
+
+    footer {
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        padding: 15px 5%;
+      }
+
+      nav h2 {
+        font-size: 18px;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 60px 7%;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero .statement {
+        font-size: 19px;
+      }
+
+      section {
+        padding: 60px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>Wonjun Choi</h2>
+
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <p>MARKETING STUDENT</p>
+
+    <h1>Wonjun Choi</h1>
+
+    <p class="statement">
+      Marketing student at Rutgers Business School combining creativity,
+      consumer insights, and data to develop meaningful marketing strategies.
+    </p>
+  </header>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+
+    <p>
+      I am a Marketing student at Rutgers Business School with a concentration
+      in Business Analytics. I am interested in digital marketing, consumer
+      behavior, content creation, and using data to better understand how
+      people interact with brands. Through academic projects and leadership
+      experiences, I have developed experience in marketing strategy, social
+      media, event planning, and creative content.
+    </p>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill-list">
+      <span class="skill">Marketing Strategy</span>
+      <span class="skill">Social Media Marketing</span>
+      <span class="skill">Content Creation</span>
+      <span class="skill">Consumer Behavior</span>
+      <span class="skill">Data Analysis</span>
+      <span class="skill">Microsoft Excel</span>
+      <span class="skill">Canva</span>
+      <span class="skill">Video Editing</span>
+      <span class="skill">AI Tools</span>
+      <span class="skill">Event Planning</span>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <p class="project-type">JOB SIMULATION</p>
+        <h3>Marketing Explorer – Forage</h3>
+
+        <p>
+          Completed a marketing job simulation exploring creative strategy,
+          performance analytics, customer and product marketing, and digital
+          marketing. The experience helped me better understand how different
+          marketing functions contribute to business decisions.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <p class="project-type">BRAND STRATEGY</p>
+        <h3>Duolingo Brand Strategy</h3>
+
+        <p>
+          Developed a brand positioning strategy for Duolingo focused on
+          creating a learning experience users want to return to. The project
+          included competitor analysis, perceptual mapping, brand positioning,
+          points of difference, and cross-platform content development.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <p class="project-type">SOCIAL MEDIA & EVENTS</p>
+        <h3>RKCM Marketing & Event Coordination</h3>
+
+        <p>
+          Helped plan and promote community events through social media,
+          digital content, and event coordination. Created Instagram content
+          and promotional materials while supporting events for a student
+          organization of approximately 50 members.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let's Connect</h2>
+
+    <p>
+      Feel free to view my work and connect with me through GitHub.
+    </p>
+
+    <a href="https://github.com/WJC101" target="_blank">
+      Visit My GitHub
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 Wonjun Choi. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
