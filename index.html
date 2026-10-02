@@ -1,18 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wonjun Choi Test</title>
+
+  <title>Wonjun Choi | Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #222222;
+    }
+
+    .container {
+      width: 85%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    nav {
+      padding: 25px 0;
+      border-bottom: 1px solid #dddddd;
+    }
+
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h2 {
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333333;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #cc0033;
+    }
+
+    .hero {
+      padding: 120px 0;
+    }
+
+    .hero .label {
+      color: #cc0033;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .hero h1 {
+      font-size: 58px;
+      margin: 10px 0 20px;
+    }
+
+    .hero .statement {
+      font-size: 22px;
+      line-height: 1.6;
+      color: #555555;
+      max-width: 800px;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .gray {
+      background: #f5f5f5;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-top: 0;
+    }
+
+    .about-text {
+      max-width: 800px;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #555555;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #eeeeee;
+      padding: 10px 18px;
+      border-radius: 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .project {
+      border: 1px solid #dddddd;
+      padding: 25px;
+      border-radius: 8px;
+      background: white;
+    }
+
+    .project-label {
+      color: #cc0033;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .project h3 {
+      margin-top: 8px;
+      font-size: 21px;
+    }
+
+    .project p {
+      color: #555555;
+      line-height: 1.7;
+    }
+
+    .contact {
+      background: #222222;
+      color: white;
+      text-align: center;
+    }
+
+    .contact p {
+      color: #cccccc;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 22px;
+      border: 1px solid white;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111111;
+      color: #aaaaaa;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      nav .container {
+        display: block;
+      }
+
+      nav div {
+        margin-top: 15px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1 style="color: black; font-size: 60px;">
-    WONJUN PORTFOLIO TEST
-  </h1>
 
-  <p style="color: black; font-size: 24px;">
-    If you can see this, GitHub Pages is working correctly.
-  </p>
+  <nav>
+    <div class="container">
+      <h2>Wonjun Choi</h2>
+
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="hero">
+    <div class="container">
+
+      <p class="label">MARKETING STUDENT</p>
+
+      <h1>Wonjun Choi</h1>
+
+      <p class="statement">
+        Marketing student at Rutgers Business School combining creativity,
+        consumer insights, and data to develop meaningful marketing strategies.
+      </p>
+
+    </div>
+  </div>
+
+
+  <section class="gray" id="about">
+    <div class="container">
+
+      <h2>About Me</h2>
+
+      <p class="about-text">
+        I am a Marketing student at Rutgers Business School with a concentration
+        in Business Analytics. I am interested in digital marketing, consumer
+        behavior, content creation, and using data to better understand how
+        people interact with brands. Through academic projects and leadership
+        experiences, I have developed experience in marketing strategy,
+        social media, event planning, and creative content.
+      </p>
+
+    </div>
+  </section>
+
+
+  <section id="skills">
+    <div class="container">
+
+      <h2>Skills</h2>
+
+      <div class="skills">
+        <span class="skill">Marketing Strategy</span>
+        <span class="skill">Social Media Marketing</span>
+        <span class="skill">Content Creation</span>
+        <span class="skill">Consumer Behavior</span>
+        <span class="skill">Data Analysis</span>
+        <span class="skill">Microsoft Excel</span>
+        <span class="skill">Canva</span>
+        <span class="skill">Video Editing</span>
+        <span class="skill">AI Tools</span>
+        <span class="skill">Event Planning</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="gray" id="projects">
+    <div class="container">
+
+      <h2>Projects</h2>
+
+      <div class="projects">
+
+        <div class="project">
+          <p class="project-label">JOB SIMULATION</p>
+
+          <h3>Marketing Explorer – Forage</h3>
+
+          <p>
+            Completed a marketing job simulation exploring creative strategy,
+            performance analytics, customer and product marketing, and digital
+            marketing. The experience helped me better understand how different
+            marketing functions contribute to business decisions.
+          </p>
+        </div>
+
+
+        <div class="project">
+          <p class="project-label">BRAND STRATEGY</p>
+
+          <h3>Duolingo Brand Strategy</h3>
+
+          <p>
+            Developed a brand positioning strategy for Duolingo focused on
+            creating a learning experience users want to return to. The project
+            included competitor analysis, perceptual mapping, brand positioning,
+            points of difference, and cross-platform content development.
+          </p>
+        </div>
+
+
+        <div class="project">
+          <p class="project-label">SOCIAL MEDIA & EVENTS</p>
+
+          <h3>RKCM Marketing & Event Coordination</h3>
+
+          <p>
+            Helped plan and promote community events through social media,
+            digital content, and event coordination. Created Instagram content
+            and promotional materials while supporting events for a student
+            organization of approximately 50 members.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <div class="container">
+
+      <h2>Let's Connect</h2>
+
+      <p>
+        Feel free to view my work and connect with me through GitHub.
+      </p>
+
+      <a href="https://github.com/WJC1019" target="_blank">
+        Visit My GitHub
+      </a>
+
+    </div>
+  </section>
+
+
+  <footer>
+    © 2026 Wonjun Choi. All rights reserved.
+  </footer>
+
 </body>
 </html>
